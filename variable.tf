@@ -52,23 +52,6 @@ variable "enable_dns_support" {
   description = "enable_dns_support"
 }
 
-variable "aws_region" {
-  type        = string
-  default     = "us-east-1"
-  description = "aws region"
-}
-
-
-variable "cidr_pubsubnet" {
-  type        = list(any)
-  description = "list of public cidrs"
-}
-
-variable "cidr_privsubnet" {
-  type        = list(any)
-  default     = ["10.0.1.0/24", "10.0.3.0/24"]
-  description = "list of private cidrs"
-}
 
 
 
