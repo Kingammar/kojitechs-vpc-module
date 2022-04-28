@@ -7,7 +7,7 @@ provider "aws" {
 
 
 module vpc {
-    source = "git::git@https://github.com/Kingammar/kojitechs-vpc-module.git"
+    source = "git::https://github.com/Kingammar/kojitechs-vpc-module.git"
 
     vpc_cidr = "10.0.0.0/16"
     cidr_pubsubnet = ["10.0.2.0/24", "10.0.4.0/24"]

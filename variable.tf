@@ -29,7 +29,7 @@ variable "cidr_database" {
   description = "list of database cidrs"
 }
 
-variable "priv_availability_zone" {
+variable "database_availability_zone" {
   type        = string
   description = "provide availability zone for private subnet"
 }
