@@ -14,6 +14,8 @@ module vpc {
     pub_availability_zone = ["us-east-1a", "us-east-1b"]
     cidr_privsubnet = ["10.0.1.0/24", "10.0.3.0/24"]
     priv_availability_zone = ["us-east-1a", "us-east-1c"]
+    cidr_databasesubnet = ["10.0.5.0/24", "10.0.7.0/24"]
+    database_availability_zone = ["us-east-1d", "us-east-1e"]
 
     enable_nat_gateway = true
 }
