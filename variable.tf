@@ -1,4 +1,10 @@
 
+variable "create_vpc" {
+  type        = bool
+  default = true
+  description = "create vpc"
+}
+
 variable "vpc_cidr" {
   type        = string
   description = "Provide vpc Cidr"
@@ -10,7 +16,7 @@ variable "cidr_pubsubnet" {
 }
 
 variable "pub_availability_zone" {
-  type        = string
+  type        = list
   description = "provide availability zone for public subnet"
 }
 
@@ -20,7 +26,7 @@ variable "cidr_privsubnet" {
 }
 
 variable "priv_availability_zone" {
-  type        = string
+  type        = list
   description = "provide availability zone for private subnet"
 }
 
@@ -30,7 +36,7 @@ variable "cidr_database" {
 }
 
 variable "database_availability_zone" {
-  type        = string
+  type        = list
   description = "provide availability zone for private subnet"
 }
 
